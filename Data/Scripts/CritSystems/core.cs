@@ -64,6 +64,16 @@ namespace Dondelium.critsystems{
               //Make it so a reactor does not explode multiple times.
               block.Enabled = false;
 
+              //Explosion Effects!
+              MyParticleEffect explosionEffect = null;
+              MyParticlesManager.TryCreateParticleEffect("CriticalReactorExplosion_Large3X", block.WorldMatrix, out explosionEffect);
+              if (explosionEffect != null){
+								explosionEffect.UserScale = radius / 10f;
+                explosionEffect.UserLifeMultiplier = radius / 50f;
+              } else {
+                //MyAPIGateway.Utilities.ShowNotification("Explosion effect could not generate", 15000, MyFontEnum.Red);
+              }
+
               //Explosion Damage!
               Vector3D myPos = block.GetPosition();
               BoundingSphereD sphere = new BoundingSphereD(myPos, radius);
@@ -71,14 +81,6 @@ namespace Dondelium.critsystems{
               bomb.CreateParticleEffect = false;
               bomb.LifespanMiliseconds = 150 + (int)radius * 45;
               MyExplosions.AddExplosion(ref bomb, true);
-
-              //Explosion Effects!
-              MyParticleEffect explosionEffect = null;
-              MyParticlesManager.TryCreateParticleEffect(1047, out explosionEffect, false);
-              if (explosionEffect != null){
-								explosionEffect.WorldMatrix = block.WorldMatrix;
-								explosionEffect.UserScale = radius / 8f;
-              }
 
               //MyAPIGateway.Utilities.ShowNotification(block.EntityId+" "+dmg.ToString()+" "+radius.ToString(), 15000, MyFontEnum.Red);
             }

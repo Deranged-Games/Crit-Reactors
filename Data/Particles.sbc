@@ -231,7 +231,7 @@
               </Keys>
             </Property>
             <Property Name="Life" Type="Float" AnimationType="Const">
-              <ValueFloat>2.08</ValueFloat>
+              <ValueFloat>0.1</ValueFloat>
             </Property>
             <Property Name="Soft particle distance scale" Type="Float" AnimationType="Const">
               <ValueFloat>20</ValueFloat>
@@ -537,7 +537,7 @@
               <Keys>
                 <Key>
                   <Time>0</Time>
-                  <ValueFloat>1.5</ValueFloat>
+                  <ValueFloat>0</ValueFloat>
                 </Key>
               </Keys>
             </Property>
@@ -545,7 +545,7 @@
               <Keys>
                 <Key>
                   <Time>0</Time>
-                  <ValueFloat>0.8</ValueFloat>
+                  <ValueFloat>0</ValueFloat>
                 </Key>
               </Keys>
             </Property>
@@ -600,7 +600,7 @@
               </Keys>
             </Property>
             <Property Name="Rotation velocity" Type="Float" AnimationType="Const">
-              <ValueFloat>1</ValueFloat>
+              <ValueFloat>30</ValueFloat>
             </Property>
             <Property Name="Radius" Type="Float" AnimationType="Animated2D">
               <Keys>
@@ -613,16 +613,20 @@
                         <ValueFloat>0</ValueFloat>
                       </Key>
                       <Key>
-                        <Time>0.00317965</Time>
-                        <ValueFloat>0</ValueFloat>
-                      </Key>
-                      <Key>
-                        <Time>0.006359301</Time>
+                        <Time>0.05</Time>
                         <ValueFloat>4</ValueFloat>
                       </Key>
                       <Key>
+                        <Time>0.2</Time>
+                        <ValueFloat>8</ValueFloat>
+                      </Key>
+                      <Key>
+                        <Time>0.8</Time>
+                        <ValueFloat>6</ValueFloat>
+                      </Key>
+                      <Key>
                         <Time>1</Time>
-                        <ValueFloat>14</ValueFloat>
+                        <ValueFloat>1</ValueFloat>
                       </Key>
                     </Keys>
                   </Value2D>
@@ -630,7 +634,7 @@
               </Keys>
             </Property>
             <Property Name="Life" Type="Float" AnimationType="Const">
-              <ValueFloat>7</ValueFloat>
+              <ValueFloat>4.5</ValueFloat>
             </Property>
             <Property Name="Soft particle distance scale" Type="Float" AnimationType="Const">
               <ValueFloat>10</ValueFloat>
@@ -679,7 +683,7 @@
               </ValueVector3>
             </Property>
             <Property Name="Rotation velocity var" Type="Float" AnimationType="Const">
-              <ValueFloat>1</ValueFloat>
+              <ValueFloat>15</ValueFloat>
             </Property>
             <Property Name="Hue var" Type="Float" AnimationType="Const">
               <ValueFloat>0</ValueFloat>
@@ -1444,7 +1448,7 @@
               </Keys>
             </Property>
             <Property Name="Life" Type="Float" AnimationType="Const">
-              <ValueFloat>0.13</ValueFloat>
+              <ValueFloat>1</ValueFloat>
             </Property>
             <Property Name="Soft particle distance scale" Type="Float" AnimationType="Const">
               <ValueFloat>1</ValueFloat>
