@@ -56,8 +56,8 @@ namespace Dondelium.critsystems{
               //Handle inv and get damage from fuel.
               InvController invCon = new InvController(tBlock);
               int fuel = invCon.getInvAmount("MyObjectBuilder_Ingot", "Uranium");
-              dmg += 50 * fuel / MyAPIGateway.Session.SessionSettings.BlocksInventorySizeMultiplier;
-              float radius = dmg / 2000f;
+              dmg += 50 * fuel;
+              float radius = dmg / 3000f;
               if(dmg > 1000000f) dmg = 1000000f;
               if(radius > 200f) radius = 200f;
 
